@@ -39,8 +39,8 @@ router.get('/all', getAllCities)
  */
 router.get(
   '/',
-  requireAuth,
-  roleAuthorization(['admin']),
+  // requireAuth,
+  // roleAuthorization(['admin']),
   trimRequest.all,
   getCities
 )
